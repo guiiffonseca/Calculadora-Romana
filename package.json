@@ -1,0 +1,31 @@
+{
+  "name": "projeto-calculadora",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guiiffonseca/Calculadora-Romana.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guiiffonseca/Calculadora-Romana/issues"
+  },
+  "homepage": "https://github.com/guiiffonseca/Calculadora-Romana#readme",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "mongodb": "^4.4.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.10.0",
+    "eslint-config-google": "^0.14.0",
+    "nodemon": "^2.0.15"
+  }
+}
