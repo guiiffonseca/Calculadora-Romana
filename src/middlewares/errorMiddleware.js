@@ -1,7 +1,6 @@
-module.exports = (er, _req, res, _next) => {
-  const { message: { err } } = er;
-
-  if (er.status) return res.status(er.status).json({ err });
-
+module.exports = (err, req, res, _next) => {
+  if (err.status) {
+    return res.status(err.status).json({ message: err.message });
+  }
   return res.status(500).json({ message: "Internal Server Error" });
 };
