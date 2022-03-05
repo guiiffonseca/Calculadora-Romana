@@ -12,9 +12,9 @@ let db = null;
 const connection = () => {
     return db
     ? Promise.resolve(db)
-    : MongoClient.connect(MONGO_DB_URL, OPTIONS)
+    : MongoClient.connect(URL, OPTIONS)
     .then((conn) => {
-    db = conn.db('model_example');
+    db = conn.db(DB_NAME);
     return db;
     })
 };
