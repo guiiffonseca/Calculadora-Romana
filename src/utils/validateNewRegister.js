@@ -15,10 +15,6 @@ const validateEmail = (email) => {
   }
 };
 
-const emailExists = (email) => {
-  if (email) throw handleErr(errors.BAD_REQUEST, "Email already exists");
-};
-
 const validatePassword = (password) => {
   if (password.length < 6) {
     throw handleErr(errors.BAD_REQUEST,
@@ -28,7 +24,6 @@ const validatePassword = (password) => {
 
 module.exports = {
   validateEmail,
-  emailExists,
   allFieldsFilled,
   validatePassword,
 };

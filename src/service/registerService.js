@@ -3,15 +3,13 @@ const {
   validateEmail,
   validatePassword,
   allFieldsFilled,
-  emailExists,
 } = require("../utils/validateNewRegister");
+const { generateToken } = require("./jwtService");
 
 const registerService = async (data) => {
   const { name, email, password } = data;
-  const findEmail = await findEmailModel(email);
 
   allFieldsFilled(name, email, password);
-  emailExists(findEmail);
   validateEmail(email);
   validatePassword(password);
 
@@ -19,4 +17,13 @@ const registerService = async (data) => {
   return data;
 };
 
-module.exports = { registerService };
+const findUserService = async (data) => {
+  const { email: myemail } = data;
+  const findEmail = await findEmailModel(myemail);
+  const { _id, name, email } = findEmail;
+
+  const token = generateToken(_id, name, email);
+  return token;
+};
+
+module.exports = { registerService, findUserService };
