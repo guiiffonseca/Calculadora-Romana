@@ -7,7 +7,6 @@ const numbersController = async ( req, res, next) => {
     return res.status(200).json(result);
   } catch (error) {
     next(error);
-    console.log(error);
   }
 };
 
