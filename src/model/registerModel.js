@@ -13,4 +13,11 @@ const registerModel = async (data) => {
   return newRegister;
 };
 
-module.exports={ registerModel };
+const findEmailModel = async (email) => {
+  const conn = await connection();
+  const findEmail = conn.collection("users").findOne({ email });
+
+  return findEmail;
+};
+
+module.exports={ registerModel, findEmailModel };
