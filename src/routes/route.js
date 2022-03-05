@@ -1,9 +1,10 @@
 const express = require("express");
+const { numbersController } = require("../controller/numberController");
 const { registerController } = require("../controller/registerController");
+const { tokenRiqueredMiddleware } = require("../middlewares/tokenMiddleware");
 const route = express.Router();
-// const errorMiddleware = require("../middlewares/errorMiddleware");
 
 route.post("/register", registerController);
-// route.use(errorMiddleware);
+route.post("/calculator", tokenRiqueredMiddleware, numbersController );
 
 module.exports = route;
