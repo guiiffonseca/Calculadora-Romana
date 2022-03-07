@@ -5,20 +5,19 @@ const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 const allFieldsFilled = (name, email, password) => {
   if (name.length === 0 || email.length === 0 || password.length === 0) {
-    throw handleErr(errors.BAD_REQUEST, "All fields are required");
+    throw handleErr(errors.BAD_REQUEST, errors.FIELDS_REQUIRED);
   }
 };
 
 const validateEmail = (email) => {
   if (!email.match(regexEmail)) {
-    throw handleErr(errors.BAD_REQUEST, "You must inert a valid email");
+    throw handleErr(errors.BAD_REQUEST, errors.INVALID_EMAIL);
   }
 };
 
 const validatePassword = (password) => {
   if (password.length < 6) {
-    throw handleErr(errors.BAD_REQUEST,
-        "Password must have at least 6 characters");
+    throw handleErr(errors.BAD_REQUEST, errors.PASSWORD_LENGTH);
   }
 };
 
