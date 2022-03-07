@@ -2,7 +2,7 @@
 
 Bem vindo ao repositório do Projeto Calculadora-Romana
 
-##Sobre o Projeto
+## Sobre o Projeto
 
 Esse projeto consiste em uma API com dois endpoints:
 /register
@@ -14,7 +14,7 @@ O segundo endpoint é sobre realizar o cáculo de quantos números o usuário in
 Essa requisição retornará todos os números a serem somados e subtraídos além de seus respectivos resultados convertidos em Algarítimos Romanos.
 
 
-##Desenvolvimento
+## Desenvolvimento
 
 Este projeto foi desenvolvido utilizando JavaScript e NodeJs com Express e a arquitetura MSC (Model Service Controller).
 
@@ -26,7 +26,7 @@ git clone https://github.com/guiiffonseca/Calculadora-Romana.git
 Após clonar o repositório é preciso entrar no diretório que se encontra o projeto, e então dentro do terminal rodar o comando:
 npm start 
 
---
+---
 
 Regitrando um usuário: 
 
@@ -50,7 +50,7 @@ Preechendo todos os campos.
 Com o Token em mãos pode-se ir para a próxima rota tipo POST:
 http://localhost:3000/calculator
 
---
+---
 
 Fazendo os cálculos 
 
