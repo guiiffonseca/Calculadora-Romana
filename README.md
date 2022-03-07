@@ -28,7 +28,7 @@ npm start
 
 ---
 
-### Regitrando um usuário: 
+### Registrando um usuário: 
 
 Para rodar o programa localmente é necessário usar algum programa de API Client.
 
