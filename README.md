@@ -10,7 +10,7 @@ Esse projeto consiste em uma API com dois endpoints:
 
 O primeiro endpoint é sobre registrar o usuário com seus dados, e essa requisição retornará um Token.
 
-O segundo endpoint é sobre realizar o cáculo de quantos números o usuário inserir, contudo é preciso estar autorizado com o Token criado.
+O segundo endpoint é sobre realizar o cáculo de quantos números do tipo int que o usuário inserir, contudo é preciso estar autorizado com o Token criado.
 Essa requisição retornará todos os números a serem somados e subtraídos além de seus respectivos resultados convertidos em Algarítimos Romanos.
 
 
