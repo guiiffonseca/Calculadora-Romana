@@ -28,7 +28,7 @@ npm start
 
 ---
 
-Regitrando um usuário: 
+### Regitrando um usuário: 
 
 Para rodar o programa localmente é necessário usar algum programa de API Client.
 
@@ -52,7 +52,7 @@ http://localhost:3000/calculator
 
 ---
 
-Fazendo os cálculos 
+### Fazendo os cálculos 
 
 A partir da rota menciona acima e com o token retornado na rota /register, é necessário que na aba "Headers" seja criado uma chave 
 "authorization" com o valor do token.
